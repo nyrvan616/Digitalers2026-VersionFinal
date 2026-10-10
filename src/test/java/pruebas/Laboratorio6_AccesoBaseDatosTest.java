@@ -37,6 +37,7 @@ public class Laboratorio6_AccesoBaseDatosTest {
             ResultSet resultado = sentencia.executeQuery(query)
         ) {
         	//getInt obtiene el valor de una columna
+        	Assert.assertTrue(resultado.next(), "La consulta no devolvió resultados");
             Assert.assertEquals(resultado.getInt("cantidad"), 6);
         }
     }

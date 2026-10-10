@@ -25,8 +25,8 @@ public class DatosExcel {
         		}
 
         	//Tomamos la cantidad de filas y columnas que tiene nuestra planilla
-            int ultimaFila = hoja.getLastRowNum();
-            int columnas = hoja.getRow(0).getPhysicalNumberOfCells();
+            int ultimaFila = hoja.getLastRowNum(); // guardo 3
+            int columnas = hoja.getRow(0).getPhysicalNumberOfCells(); //guardo 2 columnas
 
             //Creamos un objeto que tenga el "tamaño" (cantidad de filas y columnas) que tenga la planilla
             Object[][] datos = new Object[ultimaFila][columnas];

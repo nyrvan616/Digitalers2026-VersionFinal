@@ -22,7 +22,7 @@ public class Laboratorio6_E1 {
         opciones.addArguments("--disable-extensions");
 
         // Para ejecutar sin mostrar la ventana:
-        // opciones.addArguments("--headless=new");
+        opciones.addArguments("--headless=new");
 
         driver = new ChromeDriver(opciones);
     }
